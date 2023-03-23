@@ -15,25 +15,28 @@
     <main>
         <div class="drum_wrapper">
             <div data-key="83" class="drumBtn" id="kick">
-                s
+                <p>S</p>
+                <img width="40px" height="40px" class="icon" src="./assets/images/kick.png" placeholder="drum icon" alt="kick drum icon">
             </div>
             <div data-key="68" class="drumBtn" id="snare">
-                d
+                <p>D</p>
+                <img width="40px" height="40px" class="icon" src="./assets/images/snare.png" placeholder="drum icon" alt="snare drum icon">
             </div>
             <div data-key="70" class="drumBtn" id="tom1">
-                f
+                <p>F</p>
+                <img width="40px" height="40px" class="icon" src="./assets/images/toms.png" placeholder="drum icon" alt="tom drum icon">
             </div>
             <div data-key="71" class="drumBtn" id="tom2">
-                g
+                <p>G</p>
+                <img width="40px" height="40px" class="icon" src="./assets/images/toms.png" placeholder="drum icon" alt="tom drum icon">
             </div>
-            <div class="drumBtn" id="tom3">
-                h
+            <div data-key="72" class="drumBtn" id="hihat">
+                <p>H</p>
+                <img width="40px" height="40px" class="icon" src="./assets/images/cymbal.png" placeholder="drum icon" alt="cymbal drum icon">
             </div>
-            <div class="drumBtn" id="crash">
-                j
-            </div>
-            <div class="drumBtn" id="hihat">
-                k
+            <div data-key="74" class="drumBtn" id="crash">
+                <p>J</p>
+                <img width="40px" height="40px" class="icon" src="./assets/images/crash.png" placeholder="drum icon" alt="crash icon">
             </div>
         </div>
     </main>
@@ -42,6 +45,8 @@
     <audio data-key="68" src="./assets/audio/snare.wav"></audio>
     <audio data-key="70" src="./assets/audio/Electro-Tom.wav"></audio>
     <audio data-key="71" src="./assets/audio/Electronic-Tom-2.wav"></audio>
+    <audio data-key="72" src="./assets/audio/Closed-Hi-Hat-1.wav"></audio>
+    <audio  data-key="74" src="./assets/audio/Crash-Cymbal-1.wav"></audio>
 
     <script>
         window.addEventListener('keydown', (e) => {
