@@ -10,7 +10,12 @@
 </head>
 <body>
     <header>
-        <h1>Rock Out!</h1>
+        <div>
+            <h1>Rock Out!</h1>
+        </div>
+        <div class="instrucions">
+            <h3>Press the keys on your keyboard that correspond with the drum sample you'd like to trigger, and get funky with it!</h3>
+        </div>
     </header>
     <main>
         <div class="drum_wrapper">
@@ -54,8 +59,8 @@
             const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
             if(!audio) return;
             audio.currentTime = 0;
-            audio.play();
             key.classList.add('playing');
+            audio.play();
 
             function removeTransition(e) {
                 if(e.propertyName!== 'transform') return;
